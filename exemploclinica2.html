@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Médica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #f4f6f9;
+    }
+
+    /* MENU LATERAL */
+    nav {
+      width: 200px;
+      height: 100vh;
+      background-color: #005073;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      position: fixed;
+    }
+
+    nav h2 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    main {
+      margin-left: 250px;
+      padding: 30px;
+      flex-grow: 1;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h1, h2 {
+      color: #005073;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .imagem-corpo {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    /* FORMULÁRIO */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    form input, form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      padding: 10px;
+      background-color: #005073;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #007ea7;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>Clínica Médica</h2>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre a Clínica</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h1>Bem-vindo à Clínica Médica</h1>
+      <p>Atendimento de excelência em diversas especialidades para cuidar da sua saúde.</p>
+      <img class="imagem-corpo" src="https://clinimedjoinville.com.br/wp-content/uploads/2019/05/original-2a718f40fbab73c1f39f8e1d07fc0221.jpg" alt="Médicos atendendo">
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre a Clínica</h2>
+      <p>Fundada em 2010, a Clínica Médica Acesso Saúde oferece atendimento humanizado com profissionais qualificados nas áreas de Clínica Geral, Psicologia, Pediatria e Oftalmologia.</p>
+      <img class="imagem-corpo" src="https://www.centromedicopastore.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/themes/alba/img/sobre-pastore.jpg.webp" alt="Equipe médica">
+    </section>
+
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li> Clínica Geral - Horário de Atendimento: Seg a Sex (08h - 19h) </li>
+        <li> Psicologia - Horário de Atendimento: Seg a Sex (08h - 19h) </li>
+        <li> Pediatria - Horário de Atendimento: Seg a Sex (08h - 19h)</li>
+        <li> Oftalmologia - Horário de Atendimento: Seg a Sex (08h - 19h) </li>
+        <li> Todas as Especialidades no Sábado - Horário de Atendimento: (08h - 14h) </li>
+      </ul>
+      
+    </section>
+
+    <section id="contato">
+      <h2>Localização</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.971266679425!2d-60.025420525039365!3d-3.1016090968993364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b3c680b9179%3A0x2c07b6cfa0f44f3e!2sManaus%2C%20AM!5e0!3m2!1spt-BR!2sbr!4v1651423021010"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Fale Conosco</h2>
+      <form>
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu email" required />
+        <input type="text" name="assunto" placeholder="Assunto" required />
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
